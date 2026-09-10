@@ -5,14 +5,14 @@ void setup() {
 
 void draw() {
   background(35, 15, 5);
-  int Width = 55;  
-  int Height = 35; 
-  for (int x = -Width; x <= width + Width; x += 20) {
+  int sWidth = 55;  
+  int sHeight = 35; 
+  for (int x = -sWidth; x <= width + sWidth; x += 20) {
     int yOffset = 0;
     if ((x / 20) % 2 != 0) {
-      yOffset = Height / 2;
+      yOffset = sHeight / 2;
     }
-    for (int y = -Height; y <= height + Height; y += Height) {
+    for (int y = -sHeight; y <= height + sHeight; y += sHeight) {
       scale(x, y + yOffset);
     }
   }
