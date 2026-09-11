@@ -20,12 +20,12 @@ void draw() {
 
 void scale(int x, int y) {
   float sizeVar = (float)(Math.random() * 0.3 + 0.85);
-  float xJitter = (float)(Math.random() * 4 - 2);
-  float yJitter = (float)(Math.random() * 4 - 2);
+  float xMove = (float)(Math.random() * 4 - 2);
+  float yMove = (float)(Math.random() * 4 - 2);
   float curveVar = (float)(Math.random() * 6 - 3);     
   
   pushMatrix();
-  translate(x + xJitter, y + yJitter);
+  translate(x + xMove, y + yMove);
   stroke(120, 30, 0);
   strokeWeight(2);
   fill(180, 50, 0); 
